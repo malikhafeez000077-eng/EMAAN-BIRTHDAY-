@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emaan — 20 Locks of Love ❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 0,#5b1d59 0,#1b0d25 48%,#09060d 100%);color:#fff;font-family:Georgia,serif;overflow-x:hidden}
+.wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:18px}.card{width:min(620px,95vw);padding:28px 22px;border:1px solid #ffffff25;border-radius:30px;background:#ffffff0c;backdrop-filter:blur(16px);box-shadow:0 25px 100px #000b;text-align:center}
+.kiss{font-size:48px;animation:p 1.4s infinite}@keyframes p{50%{transform:scale(1.12)}}h1{font-size:clamp(28px,7vw,52px);margin:8px 0;color:#ffd7ec}h2{color:#ffd9ec}.sub{line-height:1.65;color:#f5d9e9}.msg{font-size:19px;line-height:1.8;color:#ffeaf5}.tiny{font:13px Arial;color:#d9bfd2}.bar{height:8px;background:#ffffff15;border-radius:10px;overflow:hidden;margin:18px 0}.fill{height:100%;width:0;background:#ff79ba;transition:.5s}.btn{display:inline-block;margin:7px;padding:13px 18px;border:0;border-radius:22px;background:#ff6fb4;color:white;font-weight:bold;cursor:pointer;font-size:15px;box-shadow:0 8px 25px #ff6fb444}.btn:hover{transform:translateY(-2px)}input{padding:13px 15px;border-radius:15px;border:1px solid #ffffff30;background:#ffffff10;color:white;text-align:center;font-size:16px;outline:none;width:min(300px,85%)}.hide{display:none}.wrong{color:#ffb4d7;min-height:22px}.shake{animation:s .35s}@keyframes s{25%{transform:translateX(-8px)}50%{transform:translateX(8px)}75%{transform:translateX(-5px)}}.heart{position:fixed;top:-30px;pointer-events:none;animation:fall linear forwards;z-index:5}@keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:0}}.seal{font-size:64px}.quote{padding:14px;border-radius:18px;background:#ffffff0a;margin:16px 0}.final{font-size:21px;line-height:1.9}.gold{color:#ffe0a9}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="card" id="card">
+  <div id="home">
+    <div class="kiss">💌</div><div class="tiny">A SECRET LOVE ADVENTURE</div>
+    <h1>For My Emaan ❤️</h1>
+    <p class="sub">20 locks hain... aur har lock ke peeche meri taraf se tumhare liye ek chhoti si mohabbat chhupi hai. 🥰<br><b>Sab unlock karna hoga. Jaldi nahi kar sakti. 😏🔐</b></p>
+    <button class="btn" onclick="begin()">🔐 Start The Surprise</button>
+  </div>
+  <div id="game" class="hide">
+    <div class="tiny" id="count">LOCK 1 OF 20</div><div class="bar"><div class="fill" id="fill"></div></div>
+    <div class="seal" id="icon">🔐</div><h2 id="title"></h2><p class="sub" id="clue"></p>
+    <div id="answer"></div><div class="wrong" id="wrong"></div>
+    <div class="quote" id="sweet"></div>
+  </div>
+  <div id="final" class="hide">
+    <div class="kiss">🎂❤️🎉</div><div class="tiny">15 SEPTEMBER</div>
+    <h1>Happy Birthday<br>My Emaan ❤️</h1>
+    <p class="final">
+      Meri Jaan Emaan 🥹❤️<br><br>
+      Tum meri zindagi ki woh khoobsurat dua ho jise main har din shukr ke saath mehsoos karta hoon. 
+      Tumhari muskurahat meri favourite jagah hai, aur tumhara saath meri sab se pyari khushi. 🌹<br><br>
+      Allah tumhari har dua qabool kare, tumhari zindagi ko khushiyon, sukoon aur mohabbat se bhar de. 🤲❤️
+      Aur hum dono ka saath hamesha yunhi khoobsurat rahe.<br><br>
+      <b class="gold">I Love You Meri Wife, Meri Jaan, Meri Emaan. 👑❤️</b><br><br>
+      Aaj tumhara birthday hai, lekin gift mujhe mila tha — <b>tumhari mohabbat</b>. 🥰
+    </p>
+    <button class="btn" onclick="celebrate()">🌹 Open My Last Secret</button>
+    <p id="last" class="msg"></p>
+  </div>
+</div></div>
+<script>
+const levels=[
+["🔐","Pehla Qadam","Meri taraf se pehla ishara: jis naam ke liye ye poora surprise bana hai, woh naam kya hai?","EMaan"],
+["💗","Dil Ka Password","Complete karo: Tum meri ___ ho. ❤️","JAAN"],
+["🌹","Mohabbat Ka Raaz","Aisa lafz jo dil se nikle aur mohabbat bayan kare: I ___ You","LOVE"],
+["🫶","Yaad Hai?","15 September kis khaas din ka date hai? (answer: BIRTHDAY)","BIRTHDAY"],
+["✨","Chhota Sa Hisab","2 hearts + 2 hearts = ? (sirf number)","4"],
+["💌","Secret Word","Meri wife ke liye sab se pyara lafz: EMAN ka matlab yahan kya? (EMaan likho)","EMAAN"],
+["🥰","Dil Ki Baat","Complete: Meri zindagi tumhare ___ se khoobsurat hai.","SAATH"],
+["👑","Queen Level","Meri queen ka naam?","EMAAN"],
+["🌙","Raat Ka Raaz","Complete: Tum meri raat ka ___ ho.","CHAAND"],
+["💋","Kiss Lock","Ek romantic password: KISS (capital letters mein)","KISS"],
+["❤️","Heart Lock","Dil ki language mein 3 letters: I LOVE ___ (sirf naam)","EMAAN"],
+["🎁","Gift Lock","Mere liye sab se khoobsurat gift kya hai? (TUM)","TUM"],
+["🌸","Phool Lock","Complete: Tum meri zindagi ka sab se khoobsurat ___ ho.","PHOOL"],
+["🕊️","Dua Lock","Birthday par sab se pehle kya chahiye? (DUA)","DUA"],
+["💍","Forever Lock","Complete: Main tumhara ___ rahunga. (HUSBAND)","HUSBAND"],
+["🥹","Feelings Lock","Complete: Tum ho to dil ko ___ milta hai. (SUKOON)","SUKOON"],
+["🔥","Love Lock","Complete: Meri mohabbat tumhare liye kabhi ___ nahi hogi. (KHATAM)","KHATAM"],
+["🌹","Rose Lock","3 words: MERI JAAN EMAAN — pehla lafz kya hai?","MERI"],
+["🎂","Birthday Lock","Birthday month? (SEPTEMBER)","SEPTEMBER"],
+["👑","The Final Lock","Final password: tum meri kya ho? (WIFE)","WIFE"]
+];
+const sweet=[
+"Har lock ke saath tum mere dil ke aur qareeb aa rahi ho. ❤️",
+"Tumhara naam likhna bhi mere liye ek smile ki wajah hai. 🥰",
+"Jahan tum ho, wahi meri favourite duniya hai. 🌍❤️",
+"15 September mere liye sirf date nahi, ek khoobsurat yaad hai. 🎂",
+"Chhoti si jeet... lekin mohabbat bohat bari. 💗",
+"Tumhari saadgi bhi mujhe bohat pasand hai. 🌸",
+"Tumhara saath ho to ordinary din bhi special lagta hai. ✨",
+"Meri queen ko abhi aur locks kholne hain. 👑",
+"Tum meri raaton ki dua aur subahon ki khushi ho. 🌙",
+"Ye lock bhi tumhari smile ke saamne haar gaya. 😘",
+"Mere dil mein tumhara naam permanent hai. ❤️",
+"Gift ki zaroorat nahi... tum khud gift ho. 🎁",
+"Tum meri kahani ka sab se pyara chapter ho. 🌹",
+"Allah tumhein hamesha khush rakhe. 🤲",
+"Main tumhare saath har khoobsurat kal dekhna chahta hoon. 💍",
+"Tumhare saath dil ko woh sukoon milta hai jo kahin aur nahi. 🥹",
+"Meri mohabbat ka end nahi... sirf aur zyada mohabbat hai. ❤️",
+"Ab final ke bohat qareeb ho, meri jaan. 😍",
+"Birthday girl, tum officially final lock ke paas ho! 🎂",
+"Bas... ab meri taraf se sab se bada surprise tumhara intezar kar raha hai. 👑❤️"
+];
+let i=0;
+function begin(){home.classList.add('hide');game.classList.remove('hide');render()}
+function render(){
+count.innerText=`LOCK ${i+1} OF 20`;fill.style.width=(i/20*100)+'%';icon.innerText=levels[i][0];title.innerText=levels[i][1];clue.innerText=levels[i][2];sweet.innerText=sweet[i];wrong.innerText='';
+let l=levels[i], html='';
+if([0,1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19].includes(i)) html='<input id="inp" placeholder="Password..." autocomplete="off"><br><button class="btn" onclick="check()">🔓 Unlock</button>';
+if(i===4) html='<button class="btn" onclick="choose(4)">2</button><button class="btn" onclick="choose(4)">4</button><button class="btn" onclick="choose(4)">6</button>';
+answer.innerHTML=html;
+if(i===0) inp.value=''; if(i===4) {}
+}
+function normalize(s){return (s||'').trim().toUpperCase().replace(/\s+/g,'')}
+function check(){let val=normalize(document.getElementById('inp').value),ans=levels[i][3].toUpperCase();if(val===ans)success();else fail()}
+function choose(n){if(n===4){let buttons=[...document.querySelectorAll('#answer .btn')];buttons.forEach(b=>b.onclick=()=>{});let v=event.target.innerText;if(v==='4')success();else fail()}}
+function fail(){card.classList.add('shake');wrong.innerText='❌ Nahi jani 😏 thoda aur socho... hint ko dobara parho ❤️';setTimeout(()=>card.classList.remove('shake'),400)}
+function success(){i++; if(i>=20){game.classList.add('hide');final.classList.remove('hide');fill.style.width='100%';celebrate()}else render()}
+function celebrate(){
+for(let n=0;n<90;n++){let s=document.createElement('span');s.className='heart';s.innerText=['❤️','💗','✨','🌹','🎈','💞'][Math.floor(Math.random()*6)];s.style.left=Math.random()*100+'vw';s.style.fontSize=(14+Math.random()*28)+'px';s.style.animationDuration=(3+Math.random()*5)+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),9000)}
+}
+</script>
+</body></html>
