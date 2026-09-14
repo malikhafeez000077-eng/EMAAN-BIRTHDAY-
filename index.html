@@ -1,106 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Emaan — 20 Locks of Love ❤️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Emaan ❤️ | 15 September</title>
+<meta name="theme-color" content="#ff4f81">
 <style>
-*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 0,#5b1d59 0,#1b0d25 48%,#09060d 100%);color:#fff;font-family:Georgia,serif;overflow-x:hidden}
-.wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:18px}.card{width:min(620px,95vw);padding:28px 22px;border:1px solid #ffffff25;border-radius:30px;background:#ffffff0c;backdrop-filter:blur(16px);box-shadow:0 25px 100px #000b;text-align:center}
-.kiss{font-size:48px;animation:p 1.4s infinite}@keyframes p{50%{transform:scale(1.12)}}h1{font-size:clamp(28px,7vw,52px);margin:8px 0;color:#ffd7ec}h2{color:#ffd9ec}.sub{line-height:1.65;color:#f5d9e9}.msg{font-size:19px;line-height:1.8;color:#ffeaf5}.tiny{font:13px Arial;color:#d9bfd2}.bar{height:8px;background:#ffffff15;border-radius:10px;overflow:hidden;margin:18px 0}.fill{height:100%;width:0;background:#ff79ba;transition:.5s}.btn{display:inline-block;margin:7px;padding:13px 18px;border:0;border-radius:22px;background:#ff6fb4;color:white;font-weight:bold;cursor:pointer;font-size:15px;box-shadow:0 8px 25px #ff6fb444}.btn:hover{transform:translateY(-2px)}input{padding:13px 15px;border-radius:15px;border:1px solid #ffffff30;background:#ffffff10;color:white;text-align:center;font-size:16px;outline:none;width:min(300px,85%)}.hide{display:none}.wrong{color:#ffb4d7;min-height:22px}.shake{animation:s .35s}@keyframes s{25%{transform:translateX(-8px)}50%{transform:translateX(8px)}75%{transform:translateX(-5px)}}.heart{position:fixed;top:-30px;pointer-events:none;animation:fall linear forwards;z-index:5}@keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:0}}.seal{font-size:64px}.quote{padding:14px;border-radius:18px;background:#ffffff0a;margin:16px 0}.final{font-size:21px;line-height:1.9}.gold{color:#ffe0a9}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:radial-gradient(circle at top,#ffe7f0,#fff7fb 45%,#ffeef5);color:#5b2439;overflow-x:hidden}
+#hearts{position:fixed;inset:0;pointer-events:none;z-index:0}
+.heart{position:absolute;bottom:-40px;font-size:22px;animation:float 8s linear forwards;opacity:.7}
+@keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+main{position:relative;z-index:1;max-width:920px;margin:auto;padding:24px 15px 60px}
+.card{background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border:1px solid rgba(255,105,150,.2);border-radius:28px;box-shadow:0 18px 60px rgba(126,32,71,.14);padding:28px;margin:18px 0}
+.cover{text-align:center;min-height:72vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.badge{display:inline-block;background:#fff0f5;border:1px solid #ffc2d4;border-radius:999px;padding:8px 16px;font-size:14px}
+h1{font-size:clamp(42px,10vw,82px);margin:18px 0 4px;color:#d82f67;text-shadow:0 5px 20px rgba(216,47,103,.16)}
+h2{font-size:clamp(25px,6vw,42px);margin:8px 0;color:#c92e60}
+p{font-size:18px;line-height:1.75}
+.big-heart{font-size:72px;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.13)}}
+button{border:0;border-radius:999px;padding:13px 21px;background:linear-gradient(135deg,#ff4f81,#d82f67);color:white;font-size:16px;cursor:pointer;box-shadow:0 9px 25px rgba(216,47,103,.25)}
+button:disabled{opacity:.45;cursor:not-allowed}
+.hidden{display:none}
+.lock-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px;margin-top:20px}
+.lock{padding:18px;border-radius:20px;background:#fff6f9;border:1px solid #ffd2df;text-align:center}
+.lock .emoji{font-size:30px;display:block;margin-bottom:8px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.gallery img{width:100%;height:310px;object-fit:cover;border-radius:22px;box-shadow:0 8px 24px rgba(88,25,49,.14)}
+.gallery img:nth-child(3){grid-column:1/-1;height:390px}
+.song{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;background:#fff1f6;border-radius:22px;padding:18px}
+.song-title{font-size:20px;font-weight:bold}
+iframe{width:100%;height:220px;border:0;border-radius:20px;margin-top:15px}
+.note{font-size:14px;color:#7d5262}
+.final{background:linear-gradient(135deg,#fff,#ffeaf2);text-align:center}
+@media(max-width:600px){
+ .card{padding:20px;border-radius:22px}
+ .gallery{grid-template-columns:1fr}
+ .gallery img,.gallery img:nth-child(3){height:360px;grid-column:auto}
+ p{font-size:16px}
+ iframe{height:210px}
+}
 </style>
 </head>
 <body>
-<div class="wrap"><div class="card" id="card">
-  <div id="home">
-    <div class="kiss">💌</div><div class="tiny">A SECRET LOVE ADVENTURE</div>
-    <h1>For My Emaan ❤️</h1>
-    <p class="sub">20 locks hain... aur har lock ke peeche meri taraf se tumhare liye ek chhoti si mohabbat chhupi hai. 🥰<br><b>Sab unlock karna hoga. Jaldi nahi kar sakti. 😏🔐</b></p>
-    <button class="btn" onclick="begin()">🔐 Start The Surprise</button>
+<div id="hearts"></div>
+<main>
+<section class="card cover">
+  <div class="badge">15 SEPTEMBER • A VERY SPECIAL DAY</div>
+  <div class="big-heart">💗</div>
+  <h1>Emaan</h1>
+  <p>Ek chhoti si website… sirf tumhare liye.<br>
+  <b>Happy Birthday, Meri Jaan ❤️</b></p>
+  <button onclick="start()">Open Your Surprise ✨</button>
+</section>
+
+<section id="surprise" class="hidden">
+  <div class="card">
+    <h2>🔐 15 Little Locks For Emaan</h2>
+    <p>Har lock ek chhoti si yaad hai. Sab unlock karogi to asli surprise milega. 🥹❤️</p>
+    <div class="lock-grid" id="locks"></div>
   </div>
-  <div id="game" class="hide">
-    <div class="tiny" id="count">LOCK 1 OF 20</div><div class="bar"><div class="fill" id="fill"></div></div>
-    <div class="seal" id="icon">🔐</div><h2 id="title"></h2><p class="sub" id="clue"></p>
-    <div id="answer"></div><div class="wrong" id="wrong"></div>
-    <div class="quote" id="sweet"></div>
+
+  <div class="card">
+    <h2>📸 Meri Favourite Emaan</h2>
+    <div class="gallery">
+      <img src="images/emaan-1.jpeg" alt="Emaan">
+      <img src="images/emaan-2.jpeg" alt="Emaan">
+      <img src="images/emaan-3.jpeg" alt="Emaan">
+      <img src="images/emaan-4.jpeg" alt="Emaan">
+      <img src="images/emaan-5.jpeg" alt="Emaan">
+    </div>
   </div>
-  <div id="final" class="hide">
-    <div class="kiss">🎂❤️🎉</div><div class="tiny">15 SEPTEMBER</div>
-    <h1>Happy Birthday<br>My Emaan ❤️</h1>
-    <p class="final">
-      Meri Jaan Emaan 🥹❤️<br><br>
-      Tum meri zindagi ki woh khoobsurat dua ho jise main har din shukr ke saath mehsoos karta hoon. 
-      Tumhari muskurahat meri favourite jagah hai, aur tumhara saath meri sab se pyari khushi. 🌹<br><br>
-      Allah tumhari har dua qabool kare, tumhari zindagi ko khushiyon, sukoon aur mohabbat se bhar de. 🤲❤️
-      Aur hum dono ka saath hamesha yunhi khoobsurat rahe.<br><br>
-      <b class="gold">I Love You Meri Wife, Meri Jaan, Meri Emaan. 👑❤️</b><br><br>
-      Aaj tumhara birthday hai, lekin gift mujhe mila tha — <b>tumhari mohabbat</b>. 🥰
+
+  <div class="card">
+    <h2>🎵 Our Song</h2>
+    <div class="song">
+      <div>
+        <div class="song-title">Meri Zindagi Hai Tu ❤️</div>
+        <div class="note">Jubin Nautiyal & Neeti Mohan</div>
+      </div>
+      <button onclick="document.getElementById('player').scrollIntoView({behavior:'smooth'})">Play Song 🎶</button>
+    </div>
+    <div id="musicFrame" style="position:fixed;width:1px;height:1px;left:-10px;top:-10px;opacity:0;pointer-events:none;overflow:hidden;">
+      <iframe id="player" width="1" height="1"
+        src="https://www.youtube.com/embed/v80NratLtl0?rel=0&controls=0&loop=1&playlist=v80NratLtl0&playsinline=1"
+        title="Meri Zindagi Hai Tu"
+        allow="autoplay; encrypted-media; picture-in-picture"></iframe>
+    </div>
+    <p class="note">🎵 Song website ke andar hi play hoga. “Open Your Surprise” dabate hi music start karne ki koshish hogi.</p>
+  </div>
+
+  <div class="card final" id="final">
+    <h2>💌 For You, Emaan</h2>
+    <p>
+      Tum sirf meri zindagi ka ek hissa nahi ho…<br>
+      tum woh khoobsurat ehsaas ho jiske bina sab kuch adhoora sa lagta hai. ❤️
     </p>
-    <button class="btn" onclick="celebrate()">🌹 Open My Last Secret</button>
-    <p id="last" class="msg"></p>
+    <p>
+      <b>15 September</b> ko duniya mein ek bohat pyari si jaan aayi thi…
+      aur meri duniya mein tumhari wajah se aur bhi roshni aa gayi. 🥹💗
+    </p>
+    <h2>Happy Birthday, Emaan 🎂🌸</h2>
+    <p><b>Meri Jaan • Meri Zindagi • Meri Khushi • Meri Emaan ❤️</b></p>
   </div>
-</div></div>
+</section>
+</main>
+
 <script>
-const levels=[
-["🔐","Pehla Qadam","Meri taraf se pehla ishara: jis naam ke liye ye poora surprise bana hai, woh naam kya hai?","EMaan"],
-["💗","Dil Ka Password","Complete karo: Tum meri ___ ho. ❤️","JAAN"],
-["🌹","Mohabbat Ka Raaz","Aisa lafz jo dil se nikle aur mohabbat bayan kare: I ___ You","LOVE"],
-["🫶","Yaad Hai?","15 September kis khaas din ka date hai? (answer: BIRTHDAY)","BIRTHDAY"],
-["✨","Chhota Sa Hisab","2 hearts + 2 hearts = ? (sirf number)","4"],
-["💌","Secret Word","Meri wife ke liye sab se pyara lafz: EMAN ka matlab yahan kya? (EMaan likho)","EMAAN"],
-["🥰","Dil Ki Baat","Complete: Meri zindagi tumhare ___ se khoobsurat hai.","SAATH"],
-["👑","Queen Level","Meri queen ka naam?","EMAAN"],
-["🌙","Raat Ka Raaz","Complete: Tum meri raat ka ___ ho.","CHAAND"],
-["💋","Kiss Lock","Ek romantic password: KISS (capital letters mein)","KISS"],
-["❤️","Heart Lock","Dil ki language mein 3 letters: I LOVE ___ (sirf naam)","EMAAN"],
-["🎁","Gift Lock","Mere liye sab se khoobsurat gift kya hai? (TUM)","TUM"],
-["🌸","Phool Lock","Complete: Tum meri zindagi ka sab se khoobsurat ___ ho.","PHOOL"],
-["🕊️","Dua Lock","Birthday par sab se pehle kya chahiye? (DUA)","DUA"],
-["💍","Forever Lock","Complete: Main tumhara ___ rahunga. (HUSBAND)","HUSBAND"],
-["🥹","Feelings Lock","Complete: Tum ho to dil ko ___ milta hai. (SUKOON)","SUKOON"],
-["🔥","Love Lock","Complete: Meri mohabbat tumhare liye kabhi ___ nahi hogi. (KHATAM)","KHATAM"],
-["🌹","Rose Lock","3 words: MERI JAAN EMAAN — pehla lafz kya hai?","MERI"],
-["🎂","Birthday Lock","Birthday month? (SEPTEMBER)","SEPTEMBER"],
-["👑","The Final Lock","Final password: tum meri kya ho? (WIFE)","WIFE"]
+const messages = [
+"💗 Tum meri smile ho",
+"🌙 Tum meri sukoon wali raat ho",
+"🫶 Tum meri favourite person ho",
+"🥹 Tum meri sabse pyari dua ho",
+"🌸 Tum meri khushi ho",
+"💫 Tum meri roshni ho",
+"❤️ Tum mere dil ke bohat qareeb ho",
+"🧸 Tum meri cute si jaan ho",
+"✨ Tum meri favourite notification ho",
+"🌷 Tum meri beautiful memory ho",
+"💞 Tum meri mohabbat ho",
+"🥰 Tumhare bina kuch missing sa lagta hai",
+"💌 Tumhare liye dil mein bohat kuch hai",
+"👑 Mere liye tum bohat special ho",
+"🎂 Aur aaj… birthday girl ka final surprise!"
 ];
-const sweet=[
-"Har lock ke saath tum mere dil ke aur qareeb aa rahi ho. ❤️",
-"Tumhara naam likhna bhi mere liye ek smile ki wajah hai. 🥰",
-"Jahan tum ho, wahi meri favourite duniya hai. 🌍❤️",
-"15 September mere liye sirf date nahi, ek khoobsurat yaad hai. 🎂",
-"Chhoti si jeet... lekin mohabbat bohat bari. 💗",
-"Tumhari saadgi bhi mujhe bohat pasand hai. 🌸",
-"Tumhara saath ho to ordinary din bhi special lagta hai. ✨",
-"Meri queen ko abhi aur locks kholne hain. 👑",
-"Tum meri raaton ki dua aur subahon ki khushi ho. 🌙",
-"Ye lock bhi tumhari smile ke saamne haar gaya. 😘",
-"Mere dil mein tumhara naam permanent hai. ❤️",
-"Gift ki zaroorat nahi... tum khud gift ho. 🎁",
-"Tum meri kahani ka sab se pyara chapter ho. 🌹",
-"Allah tumhein hamesha khush rakhe. 🤲",
-"Main tumhare saath har khoobsurat kal dekhna chahta hoon. 💍",
-"Tumhare saath dil ko woh sukoon milta hai jo kahin aur nahi. 🥹",
-"Meri mohabbat ka end nahi... sirf aur zyada mohabbat hai. ❤️",
-"Ab final ke bohat qareeb ho, meri jaan. 😍",
-"Birthday girl, tum officially final lock ke paas ho! 🎂",
-"Bas... ab meri taraf se sab se bada surprise tumhara intezar kar raha hai. 👑❤️"
-];
-let i=0;
-function begin(){home.classList.add('hide');game.classList.remove('hide');render()}
-function render(){
-count.innerText=`LOCK ${i+1} OF 20`;fill.style.width=(i/20*100)+'%';icon.innerText=levels[i][0];title.innerText=levels[i][1];clue.innerText=levels[i][2];sweet.innerText=sweet[i];wrong.innerText='';
-let l=levels[i], html='';
-if([0,1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19].includes(i)) html='<input id="inp" placeholder="Password..." autocomplete="off"><br><button class="btn" onclick="check()">🔓 Unlock</button>';
-if(i===4) html='<button class="btn" onclick="choose(4)">2</button><button class="btn" onclick="choose(4)">4</button><button class="btn" onclick="choose(4)">6</button>';
-answer.innerHTML=html;
-if(i===0) inp.value=''; if(i===4) {}
+
+function start(){
+ document.getElementById('surprise').classList.remove('hidden');
+
+ // The click is a user gesture, so request playback immediately.
+ const player = document.getElementById('player');
+ const current = player.src;
+ if (!current.includes('autoplay=1')) {
+   player.src = current + '&autoplay=1';
+ }
+
+ window.scrollTo({top:window.innerHeight*.75,behavior:'smooth'});
 }
-function normalize(s){return (s||'').trim().toUpperCase().replace(/\s+/g,'')}
-function check(){let val=normalize(document.getElementById('inp').value),ans=levels[i][3].toUpperCase();if(val===ans)success();else fail()}
-function choose(n){if(n===4){let buttons=[...document.querySelectorAll('#answer .btn')];buttons.forEach(b=>b.onclick=()=>{});let v=event.target.innerText;if(v==='4')success();else fail()}}
-function fail(){card.classList.add('shake');wrong.innerText='❌ Nahi jani 😏 thoda aur socho... hint ko dobara parho ❤️';setTimeout(()=>card.classList.remove('shake'),400)}
-function success(){i++; if(i>=20){game.classList.add('hide');final.classList.remove('hide');fill.style.width='100%';celebrate()}else render()}
-function celebrate(){
-for(let n=0;n<90;n++){let s=document.createElement('span');s.className='heart';s.innerText=['❤️','💗','✨','🌹','🎈','💞'][Math.floor(Math.random()*6)];s.style.left=Math.random()*100+'vw';s.style.fontSize=(14+Math.random()*28)+'px';s.style.animationDuration=(3+Math.random()*5)+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),9000)}
+const grid=document.getElementById('locks');
+let unlocked=0;
+messages.forEach((m,i)=>{
+ const box=document.createElement('div');
+ box.className='lock';
+ box.innerHTML=`<span class="emoji">${i<unlocked?'🔓':'🔒'}</span><b>Lock ${i+1}</b><br><small>${i===0?'Click to begin':'Locked'}</small>`;
+ box.onclick=()=>{
+   if(i!==unlocked) return;
+   box.innerHTML=`<span class="emoji">🔓</span><b>Unlocked</b><br><small>${m}</small>`;
+   unlocked++;
+   if(unlocked<messages.length){
+     const next=grid.children[unlocked];
+     next.innerHTML=`<span class="emoji">🔓</span><b>Lock ${unlocked+1}</b><br><small>Click to unlock</small>`;
+   } else {
+     document.getElementById('final').scrollIntoView({behavior:'smooth'});
+   }
+ };
+ grid.appendChild(box);
+});
+function floatHeart(){
+ const h=document.createElement('div');
+ h.className='heart';
+ h.textContent=['❤️','💗','💖','💕','💞','🌸'][Math.floor(Math.random()*6)];
+ h.style.left=Math.random()*100+'vw';
+ h.style.animationDuration=(5+Math.random()*5)+'s';
+ document.getElementById('hearts').appendChild(h);
+ setTimeout(()=>h.remove(),10000);
 }
+setInterval(floatHeart,700);
 </script>
-</body></html>
+</body>
+</html>
